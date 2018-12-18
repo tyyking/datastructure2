@@ -112,8 +112,8 @@ public class ArrayList<E> implements List<E>{
 		size--;
 		
 		data[size] = null;
-
-		if(size < (data.length >> 1)) {
+		
+		if(size <= (data.length >> 1)) {
 			grow(data.length/2);
 		}
 		
@@ -139,7 +139,7 @@ public class ArrayList<E> implements List<E>{
 			System.out.println("The " + i + "th element is: " + list.get(i));
 		}
 		
-		for(int i=0,j=0; i<70; i++) {
+		for(int i=0,j=0; i<150; i+=2) {
 			list.remove(j);
 		}
 		
