@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public class ArrayList<E> implements List<E>{
 	
-	private static final int DEFAULT_CAPACITY = 10;
+	private static final int DEFAULT_CAPACITY = 10; // 数组初始容量
 	
-	private E[] data;
-	private int size;
+	private E[] data;// 定义数组
+	private int size;// 数组容量大小
 	
 	public ArrayList(int capacity) {
 		this.size = 0;
